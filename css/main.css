@@ -115,11 +115,7 @@ li{
     background-position: right;
     display: flex;
     flex-wrap: wrap;
-}
-@media (min-width: 768px) {
-    .banner{
-        background-size: 100%;
-    }
+    background-color: #b6b6b6;
 }
 .banner-text__logo{
     display: flex;
