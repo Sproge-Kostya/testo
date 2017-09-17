@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+  font-family:'Gothic';
+  src:  url('../fonts/Century-Gothic.woff2'),
+  url('../fonts/Century-Gothic.woff'),
+  url('../fonts/Century-Gothic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'testo';
+  src:  url('../fonts/testo.eot?4kciot');
+  src:  url('../fonts/testo.eot?4kciot#iefix') format('embedded-opentype'),
+    url('../fonts/testo.ttf?4kciot') format('truetype'),
+    url('../fonts/testo.woff?4kciot') format('woff'),
+    url('../fonts/testo.svg?4kciot#testo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'testo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook-logo:before {
+  content: "\e900";
+}
+.icon-instagram-logo:before {
+  content: "\e901";
+}
+.icon-vk-social-logotype:before {
+  content: "\e902";
+}
+.icon-phone:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-e-mail:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-location:before {
+  content: "\e905";
+  color: #fff;
+}
+
+html{
+    background-color: #474747;
+}
+body{
+    background-color: #474747;
+   font-family:'Gothic';
+}
+a{
+    text-decoration: none;
+}
+a:focus,
+a:hover{
+    outline: none;
+    text-decoration: none;
+}
+span[class*="icon-"]{
+    font-size: 40px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1230px) {
+  .container {
+    min-width: 1205px;
+  }
+}
+.banner{
+    height: initial;
+    min-height: 500px;
+    background: url(../images/banner/banner_01.jpg) no-repeat;
+    background-size: initial;
+    background-position: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    .banner{
+        background-size: 100%;
+    }
+}
+.banner-text__logo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+}
+.banner-left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 992px) {
+    .banner-left{
+        width: 75%;
+    }
+}
+.banner-text__logo .brand-logo img{
+    width: 80%;
+}
+@media (min-width: 768px) {
+    .banner-text__logo .brand-logo img{
+        width: initial;
+    }  
+}
+.banner-left .banner-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 35px 0;
+    margin-left: 15%;
+}
+.banner-icon a{
+    font:600 17px "Gothic";
+    color:#333;
+    opacity: 1;
+}
+.banner-icon a:hover span{
+    opacity: .8;
+}
+.banner-icon span{
+    margin-right:10px;
+}
+.banner-text__logo .banner-icon{
+    display: none;
+}
+@media (min-width: 992px) {
+  .banner-text__logo .banner-icon{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    position: relative;
+  }  
+}
+.banner-right .banner-icon a:nth-child(1){
+    position: absolute;
+    top: 325px;
+    left: 10px;
+}
+.banner-right .banner-icon a:nth-child(2){
+    position: absolute;
+    top: 70px;
+    left: 25px;
+}
+.banner-right .banner-icon a:nth-child(3){
+    position: absolute;
+    left: 130px;
+    top: 210px;
+}
+.banner-icon a:hover span{
+    opacity: .8;
+}
+.banner-right{
+    width: 25%;
+    display: none;
+}
+@media (min-width: 992px) {
+    .banner-right{
+        display: block;
+    }
+}
+.banner-right .banner-icon{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #bcbcba;
+    padding:45px 30px;
+}
+.about .about-icon{
+    width: 100%;
+    text-align: center;
+}
+.about .about-text{
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .about .about-icon{
+        width: 30%;
+    }
+    .about .about-text{
+        width: 70%;
+    } 
+}
+.about-text .title{
+    font:600 16px/2 "Gothic";
+}
+.about-text .description{
+    font:15px/1.7 "Gothic";
+}
+@media (min-width: 992px) {
+    .about-text .title{
+        font-size:21px;
+    }
+    .about-text .description{
+        font-size:21px;
+    }
+}
+.sentence{
+    color: #fff;
+    background-color: #000;
+     padding: 15px;
+}
+@media (min-width: 992px) {
+    .sentence{
+        padding: 35px;
+    }
+}
+.sentence .title{
+    text-align: center;
+    font:600 22px/2 "Gothic";
+}
+@media (min-width: 992px) {
+    .sentence .title{
+        font-size: 36px;
+    }
+}
+.sentence a{
+    display: flex;
+    width: 100%;
+    background-color: #fbac03;
+    color: #4a4b4f;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    font:600 10px/2 "Gothic";
+    margin-top: 35px;
+}
+@media (min-width: 992px) {
+    .sentence a{
+        font-size: 12px;
+        height: 120px;
+    }
+}
+.sentence a span[class*="icon-"]{
+    margin-left: 15px;
+    font-size: 35px;
+}
+@media (min-width: 768px) {
+    .sentence a{
+        font:600 36px/2 "Gothic";
+    }
+    .sentence a span[class*="icon-"]{
+        font-size: 50px;
+    }
+}
+.sentence ul{
+    display: inline-block;
+    padding: 0 4px;
+    width: 100%;
+}
+.sentence li,
+.sentence .left{
+    background-color: #585858;
+    float: left;
+    width: 100%;
+    height: 280px;
+    margin: 5px;
+}
+@media (min-width: 992px) {
+    .sentence li,
+    .sentence .left{
+        width: 270px;
+    }
+}
+.sentence .left{
+    padding: 0;
+}
+.left li{
+    float: initial;
+    margin: 5px 0;
+}
+.sentence li.long{
+    height: 570px;
+}
+.sentence li.width-l{
+    width: 550px;
+    display: none;
+}
+@media (min-width: 992px) {
+    .sentence li.width-l{
+        display: block;
+    }
+}
+.sentence li.middle{
+    width: 270px;
+    height: 280px;
+}
+@media (min-width: 992px) {
+    .sentence li.middle{
+        width: 550px;
+        height: 570px;
+    }
+}
+.sentence li img{
+    width: 100%;
+    height: 100%;
+}
+.sentence li.long img{
+    width: auto;
+}
+.sentence li.width-l img{
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .sentence li img{
+        width: initial;
+    }  
+}
+.info-block{
+    width: 270px;
+    height: 280px;
+    float: left;
+    background-color: #585858;
+    text-align: center;
+    transition: all 1s ease-out;
+    cursor: default;
+    user-select: none; 
+}
+.info-block:hover{
+    transform: scale(1.1);
+    transition: all 1s ease-out;
+}
+.info-block .title{
+    font-size: 48px;
+    line-height: 1.3;
+}
+.info-block .description{
+    font-size: 16px;
+}
+.info-block-shooroom .title{
+    font-size: 28px;
+    line-height: 1.3
+}
+.info-block-shooroom  .description{
+    font-size: 17px;
+    line-height: 1.1;
+}
+.why-we{
+    padding-top: 15px;
+    text-align: center;
+}
+.why-we-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.why-we-text span{
+    font: 15px/2 "Gothic";
+    margin:0 3px;
+}
+.why-we-text .title{
+    font:600 15px/2 "Gothic";
+}
+.why-we-text img{
+    width: 15%;
+}
+@media (min-width: 768px) {
+    .why-we-text span{
+        font: 27px/2 "Gothic";
+    }
+    .why-we-text .title{
+        font:600 27px/2 "Gothic";
+    }
+}
+
+.why-we li{
+    width: 50%;
+}
+@media (min-width: 992px) {
+    .why-we li{
+        width: 25%;
+    }
+}
+.why-we .why-img{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why-img img{
+    width: 70%;
+}
+@media (min-width: 992px) {
+    .why-img img{
+        width: 100%;
+    }
+}
+.why-we li .title{
+    font-size: 16px;
+}
+.why-we li .description{
+    font-size: 14px;
+    width: 80%;
+}
+.conditions{
+    padding-bottom: 15px;
+    margin-top: 35px;
+    text-align: center;
+    background: url(../images/banner.jpg);
+}
+.conditions .title{
+    font: 600 25px/2 "Gothic";
+    width:85%;
+    margin: 0 auto;
+    background-color: #bfcf00;
+    background: url(../images/back.png);
+    background-size: 99% 100%;
+    background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+    .conditions .title{
+        font: 600 36px/2 "Gothic";
+        width: 34%;
+        margin: 0 auto;
+        background-color: #bfcf00;
+        background: url(../images/back.png);
+        background-size: 99% 100%;
+        background-repeat: no-repeat;
+    }
+}
+.conditions-box{
+    margin: 0 35px 0 35px;
+    background-color: #fff;
+}
+.conditions-box ul{
+    padding: 25px;
+}
+.conditions-box li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .conditions-box li{
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .conditions-box li{
+        width: 14.28%;
+    }
+}
+.conditions-box li .description{
+    font:18px "Gothic";
+}
+.feedback{
+    padding-top: 30px;
+    background-color: #474747;
+}
+.feedback .title{
+    display: flex;
+    flex-direction: row;
+    height: 85px;
+}
+.feedback .title .triangle-bottom{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+.triangle-bottom h3{
+    font: 12px "Gothic";
+    color: #fff;
+    text-align: center;
+}
+@media (min-width: 992px) {
+    .triangle-bottom h3{
+        font-size: 36px;
+    }
+}
+.feedback-fomra {
+    padding:25px;
+    background-color: #fbac03;
+}
+.feedback-fomra form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.feedback-fomra form input{
+    width: 100%;
+    margin: 15px 0;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px;
+}
+@media (min-width: 768px) {
+    .feedback-fomra form input{
+        width: 30%;
+        margin: 0;
+        height: 75px;
+    }
+}
+input[type="text"]{
+    padding: 0;
+    padding-left: 15px;
+    font:700 15px "Gothic";
+}
+input:focus{
+    outline: none;
+}
+input[type="submit"]{
+    background-color: #fa220c;
+    color: #fff;
+    font:700 22px "Gothic";
+}
+@media (min-width: 992px) {
+    input[type="text"]{
+        font-size:23px;
+    }
+    input[type="submit"]{
+        font-size: 31px;
+    }
+}
+.contacts{
+    text-align: center;
+    background-color: #474747;
+    color: #fff;
+    padding: 35px 0 120px 0;
+}
+.contacts a{
+    color: #fff;
+    font:18px "Gothic";
+}
+.contacts ul{
+    padding:25px 0;
+}
+.contacts li{
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .contacts li{
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .contacts li{
+        width: 20%;
+    }
+}
+.contacts li span[class*="icon-"]{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#triangle-bottomright {
+    display: none;
+    width: 0;
+    height: 0;
+    border-bottom: 85px solid #000; 
+    border-left: 130px solid transparent;
+}
+#triangle-bottomleft {
+    display: none;
+    width: 0;
+    height: 0;
+    border-bottom: 85px solid #000; 
+    border-right: 130px solid transparent;  
+}
+
+@media (min-width: 768px) {
+#triangle-bottomright {
+    display: block;
+}
+#triangle-bottomleft {
+    display: block;
+}
+}
