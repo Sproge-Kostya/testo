@@ -266,6 +266,11 @@ li{
     font:600 10px/2 "Gothic";
     margin-top: 35px;
 }
+.sentence a:hover{
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #fbac03;
+    color: #fbac03;
+}
 @media (min-width: 992px) {
     .sentence a{
         font-size: 12px;
@@ -277,9 +282,6 @@ li{
     font-size: 35px;
 }
 @media (min-width: 768px) {
-    .sentence a{
-        font:600 36px/2 "Gothic";
-    }
     .sentence a span[class*="icon-"]{
         font-size: 50px;
     }

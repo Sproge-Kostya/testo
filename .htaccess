@@ -1,10 +1,6 @@
-<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf)$">
-  Header set Cache-Control "max-age=2592000"
-</FilesMatch>
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresDefault "access plus 1 month"
-
-    ExpiresByType image/gif "access plus 2 months"
-    ExpiresByType image/jpeg "access plus 2 months"
-</IfModule>
+<Files "index.html">
+    AddCharset UTF-8 .html
+</Files>
+<Files "forma.php">
+    AddCharset UTF-8 .php
+</Files>
